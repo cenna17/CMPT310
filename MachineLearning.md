@@ -93,5 +93,16 @@ The model should pick a hypotheses that minimizes the error rate. `Error rates` 
 
     #### Optimizing Learning with Minimal Data
 
+    `K-Fold Cross Validation Technique` 
+        1. Split your data into k equal chunks (say 5 or 10).
+
+        2. Take one chunk out to test on, and use the rest to teach the computer.
+
+        3. Repeat this so every chunk gets a turn as the “test chunk.”
+        
+        4. In the end, average all the results.
+    
+    `Leave One Out Cross Validation` is when you the chunk of data that is taken out and reserved for testing later consistes of only 1 test case.
+
 
 
