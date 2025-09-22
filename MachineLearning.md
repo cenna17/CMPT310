@@ -61,7 +61,7 @@
         
         - `Random Variable (V) 
 
-        - Prob. of uncertainty (entropy) of a random variable is: 
+    Prob. of uncertainty (entropy) of a random variable is: 
         
-        ![By equation](imgs/eqn-entropy.png)
+    ![By equation](imgs/eqn-entropy.png)
 
