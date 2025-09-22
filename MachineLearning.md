@@ -22,6 +22,7 @@
 
 #### 
 `Hypothesis space` - the set of all possible models/functions a ML algo. can choose from to learn a relationship between input data and output predictions.
+What are all the possible answers?
 
 * We may use a (polynomial) function to 'fit' the models predictions to the actual outcomes that we are looking for.
 
@@ -132,3 +133,8 @@ Focus on avoiding the bad mistakes, even if it means allowing a few of the less 
 
 - Choosing 'good' settings to tell the model how to learn before the training starts.  We should chose settings which has worked well before `(exploitation)` and ones that we haven't checked yet `(exploration)`
 
+## Come to think of it ... What is learning?
+
+We want to lean by hypotheses.  How many hypotheses and results that fit our hypotheses will we need?
+
+##### Any hypothesis that is seriously wrong will almost certainly be “found out” with high probability after a small number of examples, because it will make an incorrect prediction.
