@@ -27,11 +27,15 @@
 
 * The model may build a `hypotheses - h` and we say that the hypothesis `generalize` well if it can accurately predict outputs given some set of test cases.
 
-    - `Underfitting` - when the model fails to find a pattern in the data
+    - `Underfitting` - when the model fails to find a pattern in the data.  This may happen when a model is too simple and dail to take into account of relevant factors, leading to errors in prediction when given test data or new data.
 
     - `Overfitting` - when the model pays too much attention to the particular data set its trained on => failed/poor predictions when given unseen data.
 
-            => These 'new' data may be completely different from the tests its seen previously or ONLY SOMEWHAT DIFFERENT
+        => These 'new' data may be completely different from the tests its seen previously or ONLY SOMEWHAT DIFFERENT
+
+        - `Decision Tree Pruning` is a technique which removes unrelevant nodes in a tree => removing potential uneccessary conclusions.
+
+        This technique combats overfitting.
 
 ### Unsupervised Learning  
 
@@ -61,7 +65,7 @@
 
 - `Random Variable (V) 
 
-Prob. of uncertainty (entropy) of a random variable is: 
+Prob. of uncertainty (entropy) of a random variable is P(Vk): 
 
 ![By equation](imgs/eqn-entropy.png)
 
