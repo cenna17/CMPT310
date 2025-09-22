@@ -105,5 +105,30 @@ The model should pick a hypotheses that minimizes the error rate. `Error rates` 
     
         *** Leave One Out Cross Validation is when you the chunk of data that is taken out and reserved for testing later consistes of only 1 test case.
 
+### How to avoid messing up?
 
+Take the email spam filter example:
+
+    - Mistake 1 → A real email is marked as spam (you might miss something 
+        important).
+
+    - Mistake 2 → A spam email is marked as real (you just waste a few seconds 
+        deleting it).
+
+Both are “errors,” but they don’t hurt you equally. `Mistake 1 is worse.` So, just looking at the total error percentage hides this difference. A filter with a lower error rate could actually be worse for you if it makes the more harmful type of mistake more often.
+
+`Parameters` = These are learned automatically from the data (like the weights in a neural network or the slope of a line in linear regression).
+
+`Hyperparameters` = Settings we choose before the learning starts. They tell the learning process how to learn.
+
+#### What we really want is to tell the computer:
+
+`Maximizing Utility/Minimizing Loss` - Some mistakes matter more than others.
+Focus on avoiding the bad mistakes, even if it means allowing a few of the less serious ones.
+
+### How to speed up learning?
+
+#### Bayesian Optimization (Smart Guessing)
+
+- Choosing 'good' settings to tell the model how to learn before the training starts.  We should chose settings which has worked well before `(exploitation)` and ones that we haven't checked yet `(exploration)`
 
