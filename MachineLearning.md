@@ -59,13 +59,39 @@
 
 - `Entropy` measures the uncertainty of a random variable
 
-    `more info -> less entropy` // makes sense consider the more we know the more there is to go on
+    - `more info -> less entropy` // makes sense consider the more we know the more there is to go on
 
-    `we're absolutely sure` -> entropy is zero (eg. the sun always rises in the east)
+    - `we're absolutely sure` -> entropy is zero (eg. the sun always rises in the east)
 
     - `Random Variable (V) 
 
 Prob. of uncertainty (entropy) of a random variable is P(Vk): 
 
 ![By equation](imgs/eqn-entropy.png)
+
+- We test for significance by `assuming there's no underlying pattern in the data - NULL HYPOTHESIS` then test actual data and compare how test results fathom on par with test results where we presumed a pattern.
+
+## Model Selection and Optimization
+
+Our goal in ML is to selct a hypothesis that will optimally fit future examples.  To make that precise we need to define “future example” and “optimal fit.”
+
+### 1. Defining Future Examples
+
+First we will make the assumption that the future examples will be like the past. We call this the stationarity assumption; without it, all bets are off. We assume that each example Ej has the same prior probability distribution
+
+### 2. Defining Optimal Fit
+
+The model should pick a hypotheses that minimizes the error rate. `Error rates` may be estimated by measuring the models performance on a test set using the hypotheses.
+
+- `Training Set` are used to train candidate models
+
+- `Validation/Dev Set`  are used to evaluate candidate models and select the    
+    best one.
+
+- `Test Set` tests the model by utilizing test cases that have not been seen     
+    before.
+
+    #### Optimizing Learning with Minimal Data
+
+
 
