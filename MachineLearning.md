@@ -55,7 +55,7 @@
 
     - The nodes at each branch represents a yes/no answer, dividing up test cases across the branches as we filter down the decision tree.
 
-** How do we know the decision of the model at a branch is correct?
+#### How do we know the decision of the model at a branch is correct?
 
 - `Entropy` measures the uncertainty of a random variable
 
