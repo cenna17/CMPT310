@@ -51,11 +51,11 @@
 
 * The model tries to reach for a resultby asking a series of questions.  With each Q&A towards the test case, it leads the model 'down' the tree and 'across' branches until it reaches a conclusion/preiction about the test csae at a leaf node.
 
-** In general, outputs can be discrete/continuous.  For now we consider the output to be BOOLEAN -> `T/F -> [+]/[-] output results only`
+    - In general, outputs can be discrete/continuous.  For now we consider the output to be BOOLEAN -> `T/F -> [+]/[-] output results only`
 
-*** The nodes at each branch represents a yes/no answer, dividing up test cases across the branches as we filter down the decision tree.
+        - The nodes at each branch represents a yes/no answer, dividing up test cases across the branches as we filter down the decision tree.
 
-**** How do we know the decision of the model at a branch is correct?
+            - How do we know the decision of the model at a branch is correct?
 
 - `Entropy` measures the uncertainty of a random variable
 
