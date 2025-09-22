@@ -10,6 +10,8 @@
 
 `Classification` = Where the output for the set of inputs is a bunch of stuff that can be divided or 'classified'
 
+`Attributes` = the features which define a test case.  (ie. Apples attributes: sour taste, red/green exterior, large etc)
+
 ### Supervised Learning
 
 - Is directed; we give things labels (usually as part of testing set) and try to get the machine to give the correct label for new things/inputs
@@ -40,3 +42,13 @@
 ### Reinforcement Learning
 
 - Learning from reward and punishment
+
+### Learning Decision Trees
+
+* The model tries to reach for a resultby asking a series of questions.  With each Q&A towards the test case, it leads the model 'down' the tree and 'across' branches until it reaches a conclusion/preiction about the test csae at a leaf node.
+
+** In general, outputs can be discrete/continuous.  For now we consider the output to be BOOLEAN -> `T/F -> [+]/[-] output results only`
+
+    - The nodes at each branch represents a yes/no answer, dividing up test cases across the branches as we filter down the decision tree.
+
+
