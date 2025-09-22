@@ -133,8 +133,44 @@ Focus on avoiding the bad mistakes, even if it means allowing a few of the less 
 
 - Choosing 'good' settings to tell the model how to learn before the training starts.  We should chose settings which has worked well before `(exploitation)` and ones that we haven't checked yet `(exploration)`
 
-## Come to think of it ... What is learning?
+## What is learning? Forms of Learning
 
 We want to lean by hypotheses.  How many hypotheses and results that fit our hypotheses will we need?
 
 ##### Any hypothesis that is seriously wrong will almost certainly be “found out” with high probability after a small number of examples, because it will make an incorrect prediction.
+
+### Probably Approximately Correct (PAC - Algorithms)
+
+Algorithms that can find a pattern (hypothesis) in the data we give it that is probably close to the truth.  These algorithms may follow logical axioms: 
+
+`If A -> B`
+
+`If Pr(A) has a good chance -> Pr(B) may a a good chance to follow`
+
+A hypothesis is `Approximately Correct` when its within a certain error range from the truth.  We define this rate by episolon.
+
+#### PAC: Learning Decision Lists
+
+`Decision Lists` contain a series of tests.  If a
+test succeeds when applied to an example description, the decision list specifies the value to be returned. If the test fails, processing continues with the next test in the list. `Decision lists resemble decision trees`, but their overall structure is simpler: they branch only in one
+direction.
+
+### Linear Regression && Classification
+
+Linear regression is just about finding the straight line that best fits your data. eg) house size vs. price
+
+You want a line that goes through the points in a way that’s as close as possible to all of them. There’s a clear best line because the way we measure errors makes it so there’s only one lowest point.
+
+`Weights` shape the line; some weights shape the slop, some shape the location (up/down) the y-axis.
+
+### Nonparametric Models
+
+=> These models are not bounded by a set of parameters.  
+
+=> Remember ALL training data like a map
+
+=> When given input X -> check for corresponding output in map (if possible)
+
+### Nearest Neighbor Models
+
+Improvement of non-parametric models.
